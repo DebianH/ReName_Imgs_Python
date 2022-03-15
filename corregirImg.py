@@ -9,7 +9,7 @@ for f in os.listdir():
     if extension_archivo != '.png':  #<- validamos la extension de la imagen.
         print('Imagen no valida -> ',nombre_archivo)
     else:
-        nuevo_archivo = nombre_archivo.replace(" ","_")
+        nuevo_archivo = nombre_archivo.replace(" ","_").replace("-", "")
 
         new = '{}{}'.format(nuevo_archivo,extension_archivo)
 
